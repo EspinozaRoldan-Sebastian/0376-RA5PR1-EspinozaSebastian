@@ -1,5 +1,5 @@
 <?php
-$numero = 7;
+$numero = isset($_GET['numero']) ? (int)$_GET['numero'] : 7;
 ?>
 
 <!DOCTYPE html>
@@ -34,8 +34,15 @@ $numero = 7;
     </style>
 </head>
 <body>
+
+<form method="get" style="text-align:center; margin-top:20px;">
+    <label>Introdueix un número (1-12): </label>
+    <input type="text" name="numero" value="<?php echo $numero; ?>" required>
+    <button type="submit">Generar</button>
+</form>
+
 <?php
-if ($numero < 1 ||$numero > 12) {
+if ($numero < 1 || $numero > 12) {
     echo "<div class='error'> Error: El numero tiene que encontrarse entre el 1 y el 12</div>";
 } else {
     echo "<table>";
@@ -53,5 +60,6 @@ if ($numero < 1 ||$numero > 12) {
     echo "</table>";
 }
 ?>
+
 </body>
 </html>
