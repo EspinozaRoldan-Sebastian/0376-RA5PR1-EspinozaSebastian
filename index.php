@@ -41,9 +41,9 @@ if ($numero < 1 ||$numero > 12) {
     echo "<table>";
     for ($i = 1; $i <= 10; $i++) {
         if ($i % 2 == 0) {
-            $class = "parell";
+            $classe = "parell";
         } else {
-            $class = "imparell";
+            $classe = "imparell";
         }
         echo "<tr class='$classe'>";
         echo "<td>$numero x $i</td>";
