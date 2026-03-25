@@ -19,4 +19,17 @@ $numero = 10;
             border: 1px solid #000000;
             padding: 5px;
         }
-        .parell
+        .parell {
+            background-color: #ffff;
+        }
+        .imparell {
+            background-color: #ffffff;
+        }
+        .error {
+            color: red;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
